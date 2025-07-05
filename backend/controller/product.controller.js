@@ -79,5 +79,5 @@ export const changeStock = async (req, res) => {
       .json({ success: true, product, message: "Stock updated successfully" });
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message });
-  }
+  }  
 };
