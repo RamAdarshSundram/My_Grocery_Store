@@ -1,5 +1,5 @@
 import toast from "react-hot-toast";
-import { useAppContext } from "../../context/temp";
+import { useAppContext } from "../../context/appContext";
 import React, { useState, useEffect } from "react";
 const SellerLogin = () => {
   const { isSeller, setIsSeller, navigate, axios } = useAppContext();
@@ -24,6 +24,7 @@ const SellerLogin = () => {
         toast.error(data.message);
       }
     } catch (error) {
+
       toast.error(error.message);
     }
   };

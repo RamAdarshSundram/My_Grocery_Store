@@ -1,5 +1,5 @@
 import toast from "react-hot-toast";
-import { useAppContext } from "../../context/temp";
+import { useAppContext } from "../../context/appContext";
 
 const ProductList = () => {
   const { products, fetchProducts, axios } = useAppContext();
