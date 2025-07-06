@@ -1,5 +1,5 @@
 import { assets } from "../assets/assets";
-import { useAppContext } from "../context/appContext";
+import { useAppContext } from "../context/temp";
 
 const ProductCard = ({ product }) => {
   const { addToCart, removeFromCart, cartItems, navigate } = useAppContext();
